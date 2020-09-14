@@ -1,0 +1,12 @@
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.csprojAssemblyReference.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.AssemblyInfoInputs.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.AssemblyInfo.cs
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.csproj.CoreCompileInputs.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\bin\Debug\netcoreapp3.1\Factories.deps.json
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\bin\Debug\netcoreapp3.1\Factories.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\bin\Debug\netcoreapp3.1\Factories.pdb
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.csproj.CopyComplete
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Bookinghandler\obj\Debug\netcoreapp3.1\Factories.pdb

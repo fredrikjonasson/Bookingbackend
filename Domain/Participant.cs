@@ -9,6 +9,11 @@ namespace Domain
     {
         public Guid Id { get; set; }
         public IContactInformation ContactInformation { get; set; }
+        public Participant(Guid id, IContactInformation contactInformation)
+        {
+            ContactInformation = contactInformation;
+        }
+
 
 
     }

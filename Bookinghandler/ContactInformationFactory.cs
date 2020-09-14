@@ -4,13 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookinghandler
+namespace Factories
 {
-    public class ContactInformationFactory : IContactinformationFactory
+    public class ContactInformationFactory : IContactInformationFactory
     {
-        public IContactInformation CreateContactInformation(string firstName, string lastName, string email)
+        public IContactInformation CreateContactInformation(Guid id, string firstName, string lastName, string email)
         {
-            throw new NotImplementedException();
+            IContactInformation contactInformation = new ContactInformation(id, firstName, lastName, email); 
+            return contactInformation;
         }
     }
 }

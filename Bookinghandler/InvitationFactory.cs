@@ -4,21 +4,28 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookinghandler
+namespace Factories
 {
     public class InvitationFactory : IInvitationFactory
     {
-        private readonly IInvitation _invitation;
-
-        public InvitationFactory(IInvitation invitation)
+        public InvitationFactory()
         {
-            _invitation = invitation;
-
         }
 
-        public IInvitation CreateInvitation(string email)
+        public IInvitation CreateInvitation(Guid id, string email)
         {
-            throw new NotImplementedException();
+            IInvitation invitation = new Invitation(id, email);
+            return invitation;
+
+        }
+        public IEnumerable<IInvitation> CreateInvitationEnumerable(IEnumerable<string> sentInvitations)
+        {
+            List<IInvitation> invitations = new List<IInvitation>();
+            foreach (string email in sentInvitations)
+            {
+               invitations.Add(CreateInvitation(Guid.NewGuid(), email));
+            }
+            return invitations;
         }
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.pdb
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\FredrikJonasson\source\repos\Bookingbackend\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete

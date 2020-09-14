@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Domain
 {
-    public interface IContactinformationFactory
+    public interface IContactInformationFactory
     {
-        IContactInformation CreateContactInformation(string firstName, string lastName, string email);
+        IContactInformation CreateContactInformation(Guid id, string firstName, string lastName, string email);
 
     }
 }

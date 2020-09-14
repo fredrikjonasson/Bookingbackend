@@ -7,6 +7,6 @@ namespace Domain
 {
     public interface IParticipantFactory
     {
-        IParticipant CreateParticipant(IContactInformation contactInformation);
+        IParticipant CreateParticipant(Guid id, IContactInformation contactInformation);
     }
 }

@@ -5091,9 +5091,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookinghandler\\Bookinghandler.csproj",
-      "projectName": "Bookinghandler",
-      "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookinghandler\\Bookinghandler.csproj",
+      "projectUniqueName": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookinghandler\\Factories.csproj",
+      "projectName": "Factories",
+      "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookinghandler\\Factories.csproj",
       "packagesPath": "C:\\Users\\FredrikJonasson\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookinghandler\\obj\\",
       "projectStyle": "PackageReference",

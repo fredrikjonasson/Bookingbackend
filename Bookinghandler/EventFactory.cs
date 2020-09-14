@@ -5,23 +5,14 @@ using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Bookinghandler
+namespace Factories
 {
     public class EventFactory : IEventFactory
     {
-        private readonly IEvent _event;
-        private readonly IInvitationFactory _invitationFactory;
-
-        public EventFactory(IEvent @event, IInvitationFactory invitationFactory)
+        public IEvent CreateEvent(Guid id, string name, string description, DateTime startDate, IEnumerable<IInvitation> invitations, IEnumerable<IParticipant> participants)
         {
-            _event = @event;
-            _invitationFactory = invitationFactory;
-
-        }
-
-        public IEvent CreateEvent(string name, string description, DateTime startDate, IEnumerable<IInvitation> invitations)
-        {
-            throw new NotImplementedException();
+            IEvent @event = new Event(id, name, description, startDate, invitations, participants);
+            return @event;
         }
     }
 }

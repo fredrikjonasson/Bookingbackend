@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bookinghandler\Bookinghandler.csproj" />
+    <ProjectReference Include="..\Bookinghandler\Factories.csproj" />
   </ItemGroup>
 
 </Project>
