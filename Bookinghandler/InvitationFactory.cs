@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Bookinghandler
 {
-    public class InvitationFactory
+    public class InvitationFactory : IInvitationFactory
     {
         private readonly IInvitation _invitation;
 

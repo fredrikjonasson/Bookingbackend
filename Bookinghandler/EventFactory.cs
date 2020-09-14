@@ -7,25 +7,24 @@ using System.Text;
 
 namespace Bookinghandler
 {
-    public class EventFactory
+    public class EventFactory : IEventFactory
     {
         private readonly IEvent _event;
-        private readonly IInvitation _invitation;
+        private readonly IInvitationFactory _invitationFactory;
 
-        public EventFactory(IEvent @event, IInvitation invitation)
+        public EventFactory(IEvent @event, IInvitationFactory invitationFactory)
         {
             _event = @event;
-            _invitation = invitation;
+            _invitationFactory = invitationFactory;
 
         }
 
         public @IEvent CreateAnEvent(string name, string description, DateTime startDate, IEnumerable<string> sentInvitations)
         {
-            InvitationFactory _invitationFactory = new InvitationFactory(_invitation);
             List<IInvitation> createdInvitations = _invitationFactory.createInvitations(sentInvitations);
 
 
-            return _event.createNewEvent(name, description, startDate, createdInvitations); 
+            return _event.createNewEvent(name, description, startDate, createdInvitations);
         }
 
     }

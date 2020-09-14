@@ -10,5 +10,7 @@ namespace Domain.Interfaces
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+
+        public IContactInformation createNewContactInformation(string firstName, string lastName, string email);
     }
 }
