@@ -18,5 +18,10 @@ namespace Bookinghandler
             _invitationFactory = invitationFactory;
 
         }
+
+        public IEvent CreateEvent(string name, string description, DateTime startDate, IEnumerable<IInvitation> invitations)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

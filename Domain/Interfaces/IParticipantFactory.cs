@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookinghandler
+namespace Domain
 {
     public interface IParticipantFactory
     {
-        IParticipant createParticipant(IContactInformation contactInformation);
+        IParticipant CreateParticipant(IContactInformation contactInformation);
     }
 }

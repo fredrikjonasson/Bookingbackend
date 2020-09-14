@@ -1,9 +1,10 @@
 ﻿using Domain.Interfaces;
 using System.Collections.Generic;
 
-namespace Bookinghandler
+namespace Domain
 {
     public interface IInvitationFactory
     {
+        public IInvitation CreateInvitation(string email);
     }
 }

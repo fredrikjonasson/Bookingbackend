@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookinghandler
+namespace Domain
 {
     public interface IContactinformationFactory
     {
-        IContactInformation createContactInformation(string firstName, string lastName, string email);
+        IContactInformation CreateContactInformation(string firstName, string lastName, string email);
 
     }
 }
