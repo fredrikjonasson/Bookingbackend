@@ -11,10 +11,5 @@ namespace Domain
         public string Email { get; set; }
         IInvitation.InvitationStatus IInvitation.Status { get; set; }
 
-        public IInvitation createNewInvitation(string email)
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }

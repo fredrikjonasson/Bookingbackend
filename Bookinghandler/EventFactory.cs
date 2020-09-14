@@ -18,14 +18,5 @@ namespace Bookinghandler
             _invitationFactory = invitationFactory;
 
         }
-
-        public @IEvent CreateAnEvent(string name, string description, DateTime startDate, IEnumerable<string> sentInvitations)
-        {
-            List<IInvitation> createdInvitations = _invitationFactory.createInvitations(sentInvitations);
-
-
-            return _event.createNewEvent(name, description, startDate, createdInvitations);
-        }
-
     }
 }

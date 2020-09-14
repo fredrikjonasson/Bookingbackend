@@ -13,9 +13,5 @@ namespace Domain
         public DateTime StartDate { get; set; }
         public List<IInvitation> SentInvitations { get; set; }
 
-        public IEvent createNewEvent(string name, string desctiption, DateTime StartDate, List<IInvitation> sentinvitations)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

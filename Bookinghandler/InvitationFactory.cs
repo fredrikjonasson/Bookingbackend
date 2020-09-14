@@ -15,15 +15,5 @@ namespace Bookinghandler
 
         }
 
-        public List<IInvitation> createInvitations(IEnumerable<string> sentInvitations)
-        {
-            List<IInvitation> createdInvitations = new List<IInvitation>();
-            foreach (string sentInvitation in sentInvitations)
-            {
-                createdInvitations.Add(_invitation.createNewInvitation(sentInvitation));
-
-            }
-            return createdInvitations;
-        }
     }
 }

@@ -5,6 +5,5 @@ namespace Bookinghandler
 {
     public interface IInvitationFactory
     {
-        List<IInvitation> createInvitations(IEnumerable<string> sentInvitations);
     }
 }

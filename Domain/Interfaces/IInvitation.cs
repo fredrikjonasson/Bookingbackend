@@ -16,7 +16,5 @@ namespace Domain.Interfaces
             Attending,
             NotAttending
         }
-
-        public IInvitation createNewInvitation(string email);
     }
 }
