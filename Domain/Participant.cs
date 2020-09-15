@@ -11,10 +11,14 @@ namespace Domain
         public IContactInformation ContactInformation { get; set; }
         public Participant(Guid id, IContactInformation contactInformation)
         {
+            Id = id;
             ContactInformation = contactInformation;
         }
 
+        public Participant()
+        {
 
+        }
 
     }
 }

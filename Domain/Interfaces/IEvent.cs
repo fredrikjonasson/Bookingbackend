@@ -11,6 +11,8 @@ namespace Domain.Interfaces
         string Description { get; set; }
         DateTime StartDate { get; set; }
         public List<IInvitation> SentInvitations { get; set; }
+        public List<IParticipant> Participants { get; set; }
+
 
     }
 }

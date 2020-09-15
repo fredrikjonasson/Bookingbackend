@@ -42,9 +42,9 @@ namespace Bookingapi
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyOrigin());
+            //app.UseCors(builder => builder.AllowAnyHeader().AllowAnyOrigin().WithMethods("GET", "POST"));
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

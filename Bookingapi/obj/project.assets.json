@@ -1391,6 +1391,19 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -5076,11 +5089,17 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Domain >= 1.0.0"
+      "Domain >= 1.0.0",
+      "Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5118,6 +5137,9 @@
           "projectReferences": {
             "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj"
             }
           }
         }

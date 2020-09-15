@@ -20,7 +20,7 @@ namespace Domain
             Name = name;
             Description = description;
             StartDate = startDate;
-            this.invitations = invitations;
+            SentInvitations = (List<IInvitation>)invitations;
             Participants = (List<IParticipant>)participants;
         }
 

@@ -18,7 +18,7 @@ namespace Factories
             return invitation;
 
         }
-        public IEnumerable<IInvitation> CreateInvitationEnumerable(IEnumerable<string> sentInvitations)
+        public List<IInvitation> CreateInvitationEnumerable(IEnumerable<string> sentInvitations)
         {
             List<IInvitation> invitations = new List<IInvitation>();
             foreach (string email in sentInvitations)

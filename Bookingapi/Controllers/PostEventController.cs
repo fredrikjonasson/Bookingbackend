@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Services;
 
 namespace Bookingapi.Controllers
 {
@@ -22,7 +23,7 @@ namespace Bookingapi.Controllers
         }
 
         [HttpPost]
-        public string Post( string @event)
+        public EventDTO Post(EventDTO @event)
         {
             return @event;
         }
