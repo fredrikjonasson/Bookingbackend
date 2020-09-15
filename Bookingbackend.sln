@@ -7,12 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookingapi", "Bookingapi\Bookingapi.csproj", "{8AE15DE4-3CAF-4A9A-BB49-A4ACB4194826}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factories", "Bookinghandler\Factories.csproj", "{A43EC09D-A05B-44AE-8101-ADAB0D334C4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factories", "Factories\Factories.csproj", "{A43EC09D-A05B-44AE-8101-ADAB0D334C4B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D6248C7C-5FDB-4BB2-9890-827EB0147F86} = {D6248C7C-5FDB-4BB2-9890-827EB0147F86}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoriesShould", "BookinghandlerShould\FactoriesShould.csproj", "{30A414B6-DA9D-4DA6-83C8-C009362AF486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoriesShould", "FactoriesShould\FactoriesShould.csproj", "{30A414B6-DA9D-4DA6-83C8-C009362AF486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{B32E9830-746C-4DA6-9021-9A9728B7F9B1}"
 	ProjectSection(ProjectDependencies) = postProject

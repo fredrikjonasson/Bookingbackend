@@ -5091,11 +5091,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Projects\\Bookingbackend\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj",
+      "projectPath": "C:\\Projects\\Bookingbackend\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\FredrikJonasson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\obj\\",
+      "outputPath": "C:\\Projects\\Bookingbackend\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5116,8 +5116,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj"
+            "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj": {}
+    "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj": {
+    "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\FredrikJonasson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\obj\\",
+        "outputPath": "C:\\Projects\\Bookingbackend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -5110,11 +5110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookingapi\\Bookingapi.csproj",
+      "projectUniqueName": "C:\\Projects\\Bookingbackend\\Bookingapi\\Bookingapi.csproj",
       "projectName": "Bookingapi",
-      "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookingapi\\Bookingapi.csproj",
+      "projectPath": "C:\\Projects\\Bookingbackend\\Bookingapi\\Bookingapi.csproj",
       "packagesPath": "C:\\Users\\FredrikJonasson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Bookingapi\\obj\\",
+      "outputPath": "C:\\Projects\\Bookingbackend\\Bookingapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5135,11 +5135,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Domain\\Domain.csproj"
+            "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\FredrikJonasson\\source\\repos\\Bookingbackend\\Services\\Services.csproj"
+            "C:\\Projects\\Bookingbackend\\Services\\Services.csproj": {
+              "projectPath": "C:\\Projects\\Bookingbackend\\Services\\Services.csproj"
             }
           }
         }

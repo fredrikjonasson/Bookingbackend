@@ -1,0 +1,9 @@
+C:\Projects\Bookingbackend\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Projects\Bookingbackend\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Projects\Bookingbackend\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Projects\Bookingbackend\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
