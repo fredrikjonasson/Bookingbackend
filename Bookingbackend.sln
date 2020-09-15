@@ -14,10 +14,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factories", "Factories\Fact
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoriesShould", "FactoriesShould\FactoriesShould.csproj", "{30A414B6-DA9D-4DA6-83C8-C009362AF486}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{B32E9830-746C-4DA6-9021-9A9728B7F9B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{B32E9830-746C-4DA6-9021-9A9728B7F9B1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A43EC09D-A05B-44AE-8101-ADAB0D334C4B} = {A43EC09D-A05B-44AE-8101-ADAB0D334C4B}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesShould", "ServicesShould\ServicesShould.csproj", "{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B32E9830-746C-4DA6-9021-9A9728B7F9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32E9830-746C-4DA6-9021-9A9728B7F9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32E9830-746C-4DA6-9021-9A9728B7F9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

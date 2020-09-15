@@ -1,29 +1,15 @@
-using Factories;
 using Domain;
+using Factories;
 using Domain.Interfaces;
 using System;
-using Xunit;
 using System.Collections.Generic;
-using Moq;
+using Xunit;
 
-namespace FactoriesShould
+namespace ServicesShould
 {
-    public class EventFactoryShould
+    public class DTOConverterShould
     {
-        IEventFactory _eventFactory;
-
-        private void SetupTest()
-        {
-            _eventFactory = new EventFactory();
-
-        }
-
-        public EventFactoryShould()
-        {
-            SetupTest();
-        }
-
-        private List<IInvitation> SetUpInvitations() 
+        private List<IInvitation> SetUpInvitations()
         {
             List<string> sentInvitations = new List<string>
             {
@@ -34,7 +20,7 @@ namespace FactoriesShould
                 "testmail@3.net"
             };
             IInvitationFactory _invitationFactory = new InvitationFactory();
-            
+
             return _invitationFactory.CreateInvitationEnumerable(sentInvitations);
         }
 
@@ -47,7 +33,7 @@ namespace FactoriesShould
                 FirstName = "Fredrik",
                 LastName = "Jonasson",
                 Email = "fredrik.jonasson@outlook.com"
-               
+
             };
             return contactInformation;
         }
@@ -81,21 +67,11 @@ namespace FactoriesShould
             };
             return participants;
         }
+
         [Fact]
-        public void CreateEventShould()
+        public void Test1()
         {
-        
-            List<IInvitation> invitations = SetUpInvitations();
-            List<IParticipant> participants = SetUpParticipants();
 
-            Guid testGuid = Guid.NewGuid();
-            IEvent @event = _eventFactory.CreateEvent(testGuid, "Fredriks födelsedagskalas", "Ett vanligt födelsedagskalas", DateTime.Now, invitations, participants);
-
-            Assert.NotEqual(@event.Participants[0].Id, @event.Participants[1].Id);
-            Assert.Equal(@event.Participants[0].Id, @event.Participants[2].Id);
-            Assert.Equal(testGuid, @event.Id);
-            Assert.Equal("Fredriks födelsedagskalas", @event.Name);
-            Assert.Equal("fredrik.jonasson@outlook.com", @event.SentInvitations[0].Email);
         }
     }
 }
