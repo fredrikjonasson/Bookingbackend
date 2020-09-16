@@ -9,7 +9,7 @@ namespace Factories
 {
     public class EventFactory : IEventFactory
     {
-        public IEvent CreateEvent(Guid id, string name, string description, DateTime startDate, IEnumerable<IInvitation> invitations, IEnumerable<IParticipant> participants)
+        public IEvent CreateEvent(Guid id, string name, string description, DateTime startDate, List<IInvitation> invitations, List<IParticipant> participants)
         {
             IEvent @event = new Event(id, name, description, startDate, invitations, participants);
             return @event;

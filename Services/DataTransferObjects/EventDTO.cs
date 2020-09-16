@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Bookingapi
+namespace Services
 {
     public class EventDTO
     {

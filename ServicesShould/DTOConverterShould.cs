@@ -4,6 +4,7 @@ using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using Xunit;
+using Services;
 
 namespace ServicesShould
 {
@@ -67,11 +68,45 @@ namespace ServicesShould
             };
             return participants;
         }
-
-        [Fact]
-        public void Test1()
+        private EventDTO SetUpEventDTO()
         {
+            EventDTO eventDTO = new EventDTO
+            {
+                Name = "Födelsedagsfest",
+                Description = "En rolig fest för att fira en födelsedag",
+                StartDate = DateTime.Now,
+                SentInvitations = new List<string>
+                {
+                "fredrik.jonasson@outlook.com",
+                "fredrikjonasson@outlook.com",
+                "testmail@1.com",
+                "testmail@2.se",
+                "testmail@3.net"
+                }
+            };
+            return eventDTO;
+        }
 
+        private IEvent SetUpEvent()
+        {
+            IEventFactory _eventFactory = new EventFactory();
+            List<IInvitation> invitations = SetUpInvitations();
+            List<IParticipant> participants = SetUpParticipants();
+
+            Guid testGuid = Guid.NewGuid();
+            IEvent @event = _eventFactory.CreateEvent(testGuid, "Födelsedagsfest", "En rolig fest för att fira en födelsedag", DateTime.Now, invitations, participants);
+            return @event;
+        }
+        [Fact]
+        public void DTOConverterShouldConvert()
+        {
+            IEvent @event = SetUpEvent();
+            EventDTO eventDTO = SetUpEventDTO();
+            DTOConverter dTOConverter = new DTOConverter(new EventFactory(), new InvitationFactory());
+            IEvent convertedEvent = dTOConverter.DTOToEvent(eventDTO);
+
+            Assert.Equal(eventDTO.Name, @event.Name);
+            Assert.Equal(eventDTO.Description, @event.Description);
         }
     }
 }

@@ -22,12 +22,12 @@ namespace Services
         public IEvent AssembleEvent(string eventName, string eventDescription, DateTime startDate, IEnumerable<string> sentInvitations) 
         {
             List<IParticipant> participants = new List<IParticipant>();
-            IEnumerable<IInvitation> invitations = convertToInvitationList(sentInvitations);
+            List<IInvitation> invitations = convertToInvitationList(sentInvitations);
             IEvent @event = _eventFactory.CreateEvent(Guid.NewGuid(), eventName, eventDescription, startDate, invitations, participants);
             throw new NotImplementedException();
         }
 
-        private IEnumerable<IInvitation> convertToInvitationList(IEnumerable<string> sentInvitations)
+        private List<IInvitation> convertToInvitationList(IEnumerable<string> sentInvitations)
         {
             return _invitationFactory.CreateInvitationEnumerable(sentInvitations);
         }

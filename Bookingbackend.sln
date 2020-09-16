@@ -19,7 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 		{A43EC09D-A05B-44AE-8101-ADAB0D334C4B} = {A43EC09D-A05B-44AE-8101-ADAB0D334C4B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicesShould", "ServicesShould\ServicesShould.csproj", "{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicesShould", "ServicesShould\ServicesShould.csproj", "{E72A9CB7-F68A-4127-A65B-6EA0F4C0C6E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8AE15DE4-3CAF-4A9A-BB49-A4ACB4194826} = {8AE15DE4-3CAF-4A9A-BB49-A4ACB4194826}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

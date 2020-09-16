@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain;
+using Domain.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services;
@@ -12,9 +14,13 @@ namespace Bookingapi.Controllers
     [ApiController]
     public class PostEventController : ControllerBase
     {
-        public PostEventController()
-        {
+        IEventFactory _eventFactory;
+        IInvitationFactory _invitationFactory;
 
+        public PostEventController(IEventFactory eventFactory, IInvitationFactory invitationFactory)
+        {
+            _eventFactory = eventFactory;
+            _invitationFactory = invitationFactory;
         }
         [HttpGet]
         public string Get()
@@ -23,9 +29,18 @@ namespace Bookingapi.Controllers
         }
 
         [HttpPost]
-        public EventDTO Post(EventDTO @event)
+        public ActionResult Post(EventDTO eventDto)
         {
-            return @event;
+            if (eventDto != null)
+            {
+                DTOConverter dTOConverter = new DTOConverter(_eventFactory, _invitationFactory);
+                IEvent @event = dTOConverter.DTOToEvent(eventDto);
+                return StatusCode(200);
+            }
+            else
+            {
+                return StatusCode(500);
+            }
         }
     }
 }
