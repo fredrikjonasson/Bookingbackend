@@ -23,7 +23,7 @@ namespace Bookingapi.Controllers
             _invitationFactory = invitationFactory;
         }
         [HttpGet]
-        public string Get()
+        public string Get(Guid id)
         {
             return "tjolahoppsansa";
         }

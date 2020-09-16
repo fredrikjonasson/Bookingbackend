@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Domain;
 using Domain.Interfaces;
+using Factories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,8 +30,8 @@ namespace Bookingapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddScoped<IEvent, Event>();
-            //services.AddScoped<IInvitation, Invitation>();
+            services.AddScoped<IEventFactory, EventFactory>();
+            services.AddScoped<IInvitationFactory, InvitationFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

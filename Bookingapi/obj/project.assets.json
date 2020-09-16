@@ -1392,6 +1392,19 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "Factories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Factories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Factories.dll": {}
+        }
+      },
       "Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5090,6 +5103,11 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
+    "Factories/1.0.0": {
+      "type": "project",
+      "path": "../Factories/Factories.csproj",
+      "msbuildProject": "../Factories/Factories.csproj"
+    },
     "Services/1.0.0": {
       "type": "project",
       "path": "../Services/Services.csproj",
@@ -5099,6 +5117,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Domain >= 1.0.0",
+      "Factories >= 1.0.0",
       "Services >= 1.0.0"
     ]
   },
@@ -5137,6 +5156,9 @@
           "projectReferences": {
             "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Projects\\Bookingbackend\\Domain\\Domain.csproj"
+            },
+            "C:\\Projects\\Bookingbackend\\Factories\\Factories.csproj": {
+              "projectPath": "C:\\Projects\\Bookingbackend\\Factories\\Factories.csproj"
             },
             "C:\\Projects\\Bookingbackend\\Services\\Services.csproj": {
               "projectPath": "C:\\Projects\\Bookingbackend\\Services\\Services.csproj"
