@@ -1,6 +1,7 @@
 ﻿using Domain;
 using Domain.Interfaces;
 using Factories;
+using Repository;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -97,6 +98,25 @@ namespace ServicesShould
             Guid testGuid = Guid.NewGuid();
             IEvent @event = _eventFactory.CreateEvent(testGuid, "Födelsedagsfest", "En rolig fest för att fira en födelsedag", DateTime.Now, invitations, participants);
             return @event;
+        }
+
+        public DataBaseEventConverterShould()
+        {
+
+        }
+
+        [Fact]
+        public void EntityEventToDataBaseEvent()
+        {
+            IEvent @event = SetUpEvent();
+            DataBaseEventConverter dataBaseEventConverter = new DataBaseEventConverter();
+            DataBaseEvent databaseEvent = dataBaseEventConverter.EntityEventToDataBaseEvent(@event);
+            Assert.Equal(@event.Id, databaseEvent.Id);
+            Assert.Equal(@event.Name, databaseEvent.Name);
+            Assert.Equal(@event.Description, databaseEvent.Description);
+            Assert.Equal(@event.StartDate, databaseEvent.StartDate);
+            Assert.Equal(@event.SentInvitations, databaseEvent.SentInvitations);
+            Assert.Equal(@event.Participants, databaseEvent.Participants);
         }
     }
 }
