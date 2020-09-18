@@ -22,7 +22,7 @@ namespace RepositoryShould.Factories
         }
 
         [Fact]
-        public void CreateContactInformation()
+        public void CreateDataBaseContactInformation()
         {
             Guid testGuid = Guid.NewGuid();
             DataBaseContactInformation contactInformation = _dataBaseContactInformationFactory.CreateDataBaseContactInformation(testGuid, "Fredrik", "Jonasson", "fredrik.jonasson@outlook.com");

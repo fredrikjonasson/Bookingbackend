@@ -106,17 +106,22 @@ namespace ServicesShould
         }
 
         [Fact]
+        public void EntityInvitationsToDataBaseInvitations()
+        {
+
+        }
+
+        [Fact]
         public void EntityEventToDataBaseEvent()
         {
             IEvent @event = SetUpEvent();
-            DataBaseEventConverter dataBaseEventConverter = new DataBaseEventConverter();
+            DataBaseConverter dataBaseEventConverter = new DataBaseConverter();
             DataBaseEvent databaseEvent = dataBaseEventConverter.EntityEventToDataBaseEvent(@event);
             Assert.Equal(@event.Id, databaseEvent.Id);
             Assert.Equal(@event.Name, databaseEvent.Name);
             Assert.Equal(@event.Description, databaseEvent.Description);
             Assert.Equal(@event.StartDate, databaseEvent.StartDate);
-            Assert.Equal(@event.SentInvitations, databaseEvent.SentInvitations);
-            Assert.Equal(@event.Participants, databaseEvent.Participants);
         }
+
     }
 }
